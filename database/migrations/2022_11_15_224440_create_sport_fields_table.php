@@ -17,7 +17,7 @@ return new class extends Migration
             $table->id();
             $table->string('name');
             $table->string('address');
-            $table->string('country');
+            $table->string('city');
             $table->string('cellphone');
             $table->float('hour_price');
             $table->char('court_type');

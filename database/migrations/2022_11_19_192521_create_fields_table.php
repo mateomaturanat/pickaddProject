@@ -13,13 +13,13 @@ return new class extends Migration
      */
     public function up()
     {
-        Schema::create('canchas', function (Blueprint $table) {
+        Schema::create('fields', function (Blueprint $table) {
             $table->id();
-            $table->string('nombre')->unique();
-            $table->string('descripcion');
-            $table->integer('precio');
-            $table->string('medida_1');
-            $table->string('medida_2');
+            $table->string('name')->unique();
+            $table->string('description');
+            $table->integer('price');
+            $table->string('width');
+            $table->string('length');
             $table->timestamps();
         });
     }

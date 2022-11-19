@@ -17,7 +17,5 @@ class DatabaseSeeder extends Seeder
     {
         $this->call(UserSeeder::class);
         $this->call(SportFieldSeeder::class);
-
-        \App\Models\Cancha::factory(10)->create();
     }
 }
