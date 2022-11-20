@@ -21,7 +21,6 @@ return new class extends Migration
             $table->float('width');
             $table->unsignedBigInteger('sports_field_Id');
 
-
             $table->foreign('sports_field_Id')->references('id')->on('sport_fields');
             $table->timestamps();
         });
