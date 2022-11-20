@@ -6,8 +6,8 @@
     </x-slot>
 
     <div class="content-center">
-        <img class="h-36 w-full mb-10 object-cover object-center"
-            src="{{ asset('Reservación_Canchas/Icons/Balls.jpeg') }}" alt="">
+        <img class="h-36 w-full mb-10 object-cover object-center" src="{{ asset('images/Icons/Balls.jpeg') }}"
+            alt="">
     </div>
 
     <div class="py-12">

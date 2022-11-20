@@ -35,9 +35,9 @@
             <div class="flex flex-1 items-center justify-center sm:items-stretch sm:justify-start">
                 {{-- Logotipo --}}
                 <a href="fields" class="flex flex-shrink-0 items-center mx-10">
-                    <img class="block h-8 w-auto lg:hidden" src="{{ asset('Reservación_Canchas/Icons/LogoP.png') }}"
+                    <img class="block h-8 w-auto lg:hidden" src="{{ asset('images/Icons/LogoP.png') }}"
                         alt="Your Company">
-                    <img class="hidden h-8 w-auto lg:block" src="{{ asset('Reservación_Canchas/Icons/LogoP.png') }}"
+                    <img class="hidden h-8 w-auto lg:block" src="{{ asset('images/Icons/LogoP.png') }}"
                         alt="Your Company">
                 </a>
 
@@ -94,13 +94,13 @@
                         </div>
 
                         <!--Dropdown menu, show/hide based on menu state.
-                                                    Entering: "transition ease-out duration-100"
-                                                    From: "transform opacity-0 scale-95"
-                                                    To: "transform opacity-100 scale-100"
-                                                    Leaving: "transition ease-in duration-75"
-                                                    From: "transform opacity-100 scale-100"
-                                                    To: "transform opacity-0 scale-95"
-                                                    -->
+                                                        Entering: "transition ease-out duration-100"
+                                                        From: "transform opacity-0 scale-95"
+                                                        To: "transform opacity-100 scale-100"
+                                                        Leaving: "transition ease-in duration-75"
+                                                        From: "transform opacity-100 scale-100"
+                                                        To: "transform opacity-0 scale-95"
+                                                        -->
                         {{-- Settings --}}
                         <div x-show="open" x-on:click.away="open = false"
                             class="absolute right-0 z-10 mt-2 w-48 origin-top-right rounded-md bg-white py-1 shadow-lg ring-1 ring-black ring-opacity-5 focus:outline-none"
