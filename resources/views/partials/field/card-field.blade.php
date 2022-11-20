@@ -1,7 +1,7 @@
 <!-- component -->
 <section class="bg-white dark:bg-gray-900">
     <ul class="mx-8 lg:mx-32 md:mx-32 sm:mx-32 xl:mx-64">
-        @foreach ($canchas as $cancha)
+        @foreach ($sport_fields as $sport_field)
             <div class="flex border border-gray-400 rounded mb-10">
                 {{-- Imagen --}}
                 <div class="w-2/5">
@@ -12,11 +12,9 @@
                 {{-- Informacion de Cancha --}}
                 <div class="w-3/5 bg-gray-300">
                     <ul class="content-center items-center">
-                        <li class="p-5"><b>{{ $cancha->nombre }}</b></li>
-                        <li class="pl-5 pb-5"><b>Descripcion: </b>{{ $cancha->descripcion }}</li>
-                        <li class="pl-5 pb-5"><b>Precio: </b>{{ $cancha->precio }}</li>
-                        <li class="pl-5 pb-5"><b>Medidas: </b>{{ $cancha->medida_1 }}mts x {{ $cancha->medida_2 }}mts
-                        </li>
+                        <li class="p-5"><b>{{ $sport_field->name }}</b></li>
+                        <li class="pl-5 pb-5"><b>Descripcion: </b>{{ $sport_field->description }}</li>
+                        <li class="pl-5 pb-5"><b>Precio: </b>{{ $sport_field->price }}</li>
                     </ul>
                     <div class="mb-5 flex justify-end">
                         <button
@@ -31,6 +29,5 @@
                 </div>
             </div>
         @endforeach
-        {{ $canchas->links() }}
     </ul>
 </section>
