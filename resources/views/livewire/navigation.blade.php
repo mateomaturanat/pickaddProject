@@ -34,12 +34,10 @@
             {{-- Menu/Logo --}}
             <div class="flex flex-1 items-center justify-center sm:items-stretch sm:justify-start">
                 {{-- Logotipo --}}
-                <div class="flex flex-shrink-0 items-center">
-                    <img class="block h-8 w-auto lg:hidden"
-                        src="https://www.kindpng.com/picc/m/337-3378790_imagen-de-una-pelota-hd-png-download.png"
+                <div class="flex flex-shrink-0 items-center mx-10">
+                    <img class="block h-8 w-auto lg:hidden" src="{{ asset('Reservación_Canchas/Icons/LogoP.png') }}"
                         alt="Your Company">
-                    <img class="hidden h-8 w-auto lg:block"
-                        src="https://www.kindpng.com/picc/m/337-3378790_imagen-de-una-pelota-hd-png-download.png"
+                    <img class="hidden h-8 w-auto lg:block" src="{{ asset('Reservación_Canchas/Icons/LogoP.png') }}"
                         alt="Your Company">
                 </div>
 
@@ -49,10 +47,8 @@
                         <!-- Current: "bg-gray-900 text-white", Default: "text-gray-300 hover:bg-gray-700 hover:text-white" -->
                         <a href="#"
                             class="border border-green-500 bg-transparent text-gray-800 px-3 py-2 rounded-md text-sm font-medium"
-                            aria-current="page">Dashboard</a>
+                            aria-current="page">Campos</a>
 
-                        <a href="#"
-                            class="border hover:border-green-500 bg-transparent text-gray-800 px-3 py-2 rounded-md text-sm font-medium">Campos</a>
                         <a href="#"
                             class="border hover:border-green-500 bg-transparent text-gray-800 px-3 py-2 rounded-md text-sm font-medium">Tienda</a>
                         <a href="#"
@@ -112,8 +108,8 @@
                             id="user-menu-item-0">Your Profile</a>
                         <a href="#" class="block px-4 py-2 text-sm text-gray-700" role="menuitem" tabindex="-1"
                             id="user-menu-item-1">Settings</a>
-                        <a href="#" class="block px-4 py-2 text-sm text-gray-700" role="menuitem"
-                            tabindex="-1" id="user-menu-item-2">Sign out</a>
+                        <a href="#" class="block px-4 py-2 text-sm text-gray-700" role="menuitem" tabindex="-1"
+                            id="user-menu-item-2">Sign out</a>
                     </div>
                 </div>
             </div>
