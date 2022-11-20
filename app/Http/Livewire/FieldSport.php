@@ -4,11 +4,14 @@ namespace App\Http\Livewire;
 
 use App\Models\SportField;
 use Livewire\Component;
+use Livewire\WithPagination;
 
 class FieldSport extends Component
 {
+    use WithPagination;
+
     public $search = '';
-    private $paginate = 7;
+    private $paginate = 3;
 
     public function render()
     {

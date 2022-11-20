@@ -9,11 +9,5 @@ class Field extends Model
 {
     use HasFactory;
 
-    protected $fillable = [
-        'nombre',
-        'descripcion',
-        'precio',
-        'medida_1',
-        'medida_2',
-    ];
+    protected $guarded = [''];
 }

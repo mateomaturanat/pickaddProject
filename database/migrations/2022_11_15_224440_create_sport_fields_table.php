@@ -26,7 +26,7 @@ return new class extends Migration
             $table->char('type');
             $table->char('amount');
             $table->string('trafo');
-            $table->string('description');
+            $table->text('description');
             $table->string('image_url');
             $table->string('lat');
             $table->string('long');
