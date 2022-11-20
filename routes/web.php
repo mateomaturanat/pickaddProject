@@ -1,6 +1,7 @@
 <?php
 
 use App\Http\Controllers\FieldController;
+use App\Http\Controllers\StoreController;
 use Illuminate\Support\Facades\Route;
 
 /*
@@ -14,9 +15,6 @@ use Illuminate\Support\Facades\Route;
 |
  */
 
-Route::get('/', function () {
-    return view('welcome');
-});
 Route::get('home', function () {
     return view('home');
 });
@@ -28,3 +26,9 @@ Route::middleware([
 ])->group(function () {
     Route::resource('fields', FieldController::class);
 });
+
+Route::get('/', function () {
+    return view('welcome');
+});
+
+Route::resource('/stores', StoreController::class);
